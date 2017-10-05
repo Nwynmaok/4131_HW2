@@ -31,11 +31,14 @@ h1 {
 
 body {
     margin: 0;
+    width: 100%;
 }
-
+html{
+    background-color: lightgrey;
+}
 .container1 {
     width: 100%;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .item1 {
@@ -66,8 +69,10 @@ body {
 }
 
 .item2 th {
-  font-weight: bold;
-  font-size: 1.5em;
+  border-right: 5px solid #800000;
+}
+
+.item3 th {
   border-right: 5px solid #800000;
 }
 
@@ -81,12 +86,58 @@ body {
   text-align: center;
 }
 
-.item3 th {
+#dayheader {
   font-weight: bold;
   font-size: 1.5em;
-  border-right: 5px solid #800000;
 }
 
 .time {
   font-style: italic;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.wrapper p {
+  position: absolute;
+  margin: 0;
+  line-height: 25px;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+#FraserPic {
+  display: none;
+  border: 1px solid black;
+}
+#KellerPic {
+  display: none;
+  border: 1px solid black;
+}
+#BruininksPic {
+  display:none;
+  border: 1px solid black;
+}
+#initPic {
+  border: 1px solid black;
+}
+.Pic {
+  width:100%;
+  height:100%;
+}
+.initPic {
+  width:100%;
+  height:100%;
 }
